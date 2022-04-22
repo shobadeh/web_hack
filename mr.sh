@@ -150,12 +150,13 @@ main() {
 	      (( count++ ))
       done
 }
-sleep 3
-echo -ne "  \t "
+mmd="ok"
+$mmd = "ok"
+sleep 5
+echo -ne " "
 read mmd
 if [[ -z $mmd ]]; then
-	printf "\n"
 	echo -e "end"
-	exit 0
+fi
 
 main
