@@ -150,5 +150,12 @@ main() {
 	      (( count++ ))
       done
 }
+sleep 3
+echo -ne "  \t "
+read mmd
+if [[ -z $mmd ]]; then
+	printf "\n"
+	echo -e "end"
+	exit 0
 
 main
